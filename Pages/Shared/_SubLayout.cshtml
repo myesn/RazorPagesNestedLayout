@@ -1,0 +1,17 @@
+﻿@{
+    Layout = "_Layout";
+}
+
+@section Styles {
+    <link rel="stylesheet" href="~/Pages/Shared/_SubLayout.css" asp-append-version="true" />
+    @await RenderSectionAsync("Styles", required: false)
+}
+
+@section Scripts {
+    <script src="~/Pages/Shared/_SubLayout.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+}
+
+<h2>_SubLayout</h2>
+
+@RenderBody()
